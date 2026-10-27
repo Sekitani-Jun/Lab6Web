@@ -8,7 +8,6 @@
 - **NIM:** 312510077
 - **Mata Kuliah:** Struktur Data
 
-![Modul HTML Index](media/2.png)
 
 ## A. Identitas dan Capaian Praktikum
 
