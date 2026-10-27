@@ -255,6 +255,7 @@ Pemilihan `font-size: 1rem` sangat penting pada perangkat mobile (khususnya iOS)
 c. Javascript
 
 Membaca properti `value` dari elemen `select`. Jika nilainya masih kosong (artinya pengguna belum memilih selain opsi placeholder), pendaftaran ditahan dan error ditampilkan.
+
 ![Mini Project JS Sesi](media/41.png)
 ![Mini Project JS Sesi](media/42.png)
 
