@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="judul">Pendaftaran Workshop</h1>
+      <p>Silakan isi data diri Anda untuk mengikuti sesi workshop.</p>
+
+      <form id="formPendaftaran" novalidate>
+        <!-- Input Nama dan Penghitung Karakter -->
+        <div class="form-group">
+          <label for="namaInput">Nama Lengkap</label>
+          <input
+            type="text"
+            id="namaInput"
+            name="nama"
+            maxlength="50"
+            autocomplete="off"
+          />
+          <small>Jumlah karakter: <span id="jumlahKarakter">0</span>/50</small>
+        </div>
+        <!--input email-->
+        <div class="form-group">
+          <label for="emailInput">Email</label>
+          <input type="email" id="emailInput" name="email" autocomplete="off" />
+        </div>
+        <!-- Pilihan Sesi -->
+        <div class="form-group">
+          <label for="sesiInput">Pilihan Sesi</label>
+          <select id="sesiInput" name="sesi">
+            <option value="">-- Pilih Jadwal Sesi --</option>
+            <option value="pagi">Sesi Pagi (09:00 - 12:00)</option>
+            <option value="siang">Sesi Siang (13:00 - 16:00)</option>
+            <option value="malam">Sesi Malam (19:00 - 21:00)</option>
+          </select>
+        </div>
+        <div class="aksi-tombol">
+          <button type="submit" id="tombolDaftar">Daftar Sekarang</button>
+          <button type="reset" id="tombolReset">Reset Data</button>
+        </div>
+      </form>
+      <!-- Area Pesan Notifikasi -->
+      <p id="pesanNotifikasi" aria-live="polite"></p>
+      <div id="ringkasanInput" class="sembunyi">
+        <h3>Ringkasan Pendaftaran:</h3>
+        <ul>
+          <li><strong>Nama:</strong> <span id="ringkasanNama"></span></li>
+          <li><strong>Email:</strong> <span id="ringkasanEmail"></span></li>
+          <li><strong>Sesi:</strong> <span id="ringkasanSesi"></span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
