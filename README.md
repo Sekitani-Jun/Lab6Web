@@ -200,23 +200,23 @@ a. HTML
 
 Atribut `maxlength="50"` membatasi pengguna agar tidak mengetik lebih dari 50 karakter. Elemen `<span id="jumlahKarakter">0</span>` disiapkan sebagai wadah kosong yang angkanya akan diubah oleh JavaScript.
 
-![Mini Project HTML Nama](media/33.png)
+![Mini Project HTML Nama](media/32.png)
 
 b. Css
 
 Css membuat input teks mengisi lebar penuh kontainernya (`width: 100%`) agar mudah diklik. Elemen `<small>` diberi warna abu-abu agar visualnya tidak mendominasi layar utama.
 
-![Mini Project CSS Nama](media/34.png)
+![Mini Project CSS Nama](media/33.png)
 
 c. Javascript
 
 Event `input` akan memicu fungsi setiap kali pengguna mengetik atau menghapus karakter. Properti `.value.length` mengambil total karakter saat ini dan mencetaknya ke dalam elemen `jumlahKarakter`. Pada bagian validasi saat disubmit, `namaInput.value.trim()` digunakan untuk memastikan spasi kosong di awal/akhir tidak dihitung sebagai nama.
 
-![Mini Project JS Nama](media/35.png)
+![Mini Project JS Nama](media/34.png)
 
 d. Hasil
 
-![Mini Project Hasil Nama](media/36.png)
+![Mini Project Hasil Nama](media/35.png)
 
 ### 2. Input Email
 
@@ -224,19 +224,19 @@ a. HTML
 
 Penggunaan `type="email"` memberikan validasi bawaan dari browser, serta memunculkan keyboard khusus email (dengan tombol '@') jika dibuka melalui smartphone.
 
-![Mini Project HTML Email](media/37.png)
+![Mini Project HTML Email](media/36.png)
 
 b. Css
 
 mengaturnya melalui `.form-group`
 
-![Mini Project CSS Email](media/38.png)
+![Mini Project CSS Email](media/37.png)
 
 c. Javascript
 
 JavaScript menggunakan Regular Expression (Regex) `polaEmail` untuk memverifikasi struktur teks. Fungsi `.test(email)` akan mengembalikan nilai `true` jika struktur email valid, dan `false` jika tidak valid (memunculkan pesan error).
 
-![Mini Project JS Email](media/39.png)
+![Mini Project JS Email](media/38.png)
 
 ### 3. Pilihan Sesi
 
@@ -244,18 +244,18 @@ a. HTML
 
 Elemen `<select>` membungkus beberapa `<option>`. Opsi pertama dibiarkan dengan `value=""` sebagai placeholder (teks instruksi).
 
-![Mini Project HTML Sesi](media/40.png)
+![Mini Project HTML Sesi](media/39.png)
 
 b. Css
 
 Pemilihan `font-size: 1rem` sangat penting pada perangkat mobile (khususnya iOS) agar browser tidak otomatis melakukan zoom-in saat form dropdown diklik.
 
-![Mini Project CSS Sesi](media/41.png)
+![Mini Project CSS Sesi](media/40.png)
 
 c. Javascript
 
 Membaca properti `value` dari elemen `select`. Jika nilainya masih kosong (artinya pengguna belum memilih selain opsi placeholder), pendaftaran ditahan dan error ditampilkan.
-
+![Mini Project JS Sesi](media/41.png)
 ![Mini Project JS Sesi](media/42.png)
 
 ### 4. Tombol Aksi
@@ -277,6 +277,7 @@ c. Javascript
 Method `event.preventDefault()` pada tombol submit sangat vital karena perilaku bawaan browser saat form dikirim adalah memuat ulang (reload) halaman. Untuk tombol reset, event `click` ditambahkan guna mereset elemen manipulasi DOM (seperti angka karakter dan pesan error) yang tidak bisa direset oleh mekanisme bawaan HTML.
 
 ![Mini Project JS Tombol](media/45.png)
+![Mini Project JS Tombol](media/46.png)
 
 ### 5. Area Pesan Notifikasi
 
@@ -284,23 +285,25 @@ Wadah dinamis untuk memberikan umpan balik (feedback) visual kepada pengguna apa
 
 a. HTML
 
-![Mini Project HTML Notifikasi](media/46.png)
+![Mini Project HTML Notifikasi](media/47.png)
 
 b. Css
 
 Secara default pesan ini disembunyikan (`display: none`). Kelas `error` dan `sukses` bertugas memberikan warna (merah untuk gagal, biru untuk sukses) sekaligus memunculkan elemen tersebut (`display: block !important`).
 
-![Mini Project CSS Notifikasi](media/47.png)
+![Mini Project CSS Notifikasi](media/48.png)
 
 c. Javascript
 
 Fungsi ini menyuntikkan teks yang diberikan ke dalam paragraf, lalu menimpa atribut kelasnya (menggunakan properti `.className`) menjadi "error" atau "sukses" berdasarkan hasil kondisi validasi (`if-else`) pada bagian event submit.
 
-![Mini Project JS Notifikasi](media/48.png)
+![Mini Project JS Notifikasi](media/49.png)
 
 Hasil Mini Project Keseluruhn
 
-![Mini Project Hasil Keseluruhan](media/49.png)
+![Mini Project Hasil Keseluruhan](media/50.png)
+![Mini Project Hasil Keseluruhan](media/51.png)
+
 
 ## E. Pertanyaan Evaluasi
 
@@ -336,7 +339,6 @@ Secara bawaan (default), ketika form disubmit, browser akan memuat ulang halaman
 - `textContent` mengatur atau mengekstrak konten murni sebagai teks biasa. Jika Anda memasukkan tag HTML, tag tersebut akan dicetak mentah-mentah di layar.
 - `innerHTML` mengatur atau mengekstrak konten dalam format HTML. Tag yang dimasukkan (misal `<b>teks</b>`) akan diproses dan dirender langsung oleh browser.
 
-![Evaluasi 5 Teks](media/50.png)
 
 **Keamanan:**
 
@@ -353,4 +355,3 @@ Secara bawaan (default), ketika form disubmit, browser akan memuat ulang halaman
 - **Uji Format Data (Pattern/Type Matching):** Memastikan data yang diinput sesuai dengan format yang diminta. Misalnya, kolom email harus memiliki simbol @ dan nama domain, atau kolom nomor telepon tidak boleh menerima huruf.
 - **Uji Batasan Nilai (Boundary/Length):** Memeriksa batasan karakter dan angka, seperti memvalidasi bahwa password harus berjumlah minimal 8 karakter atau batasan umur pengguna tidak boleh bernilai negatif.
 
-![Evaluasi 7 Teks](media/51.png)
