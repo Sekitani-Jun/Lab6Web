@@ -32,37 +32,37 @@
 
 ### 1. Buat Struktur Html
 
-![Kode index.html](media/3.png)
+![Kode index.html](media/2.png)
 
 Atribut `defer` membuat JavaScript dijalankan setelah HTML selesai diparsing, sehingga elemen yang dipilih sudah tersedia.
 
 ### 2. Mengubah teks DOM berdasarkan 'id' pada Javascript menggunakan textContent
 
-![Kode script.js textContent](media/4.png)
+![Kode script.js textContent](media/3.png)
 
 ### 3. Event Click
 
 a. Karena adanya kesalahan pada penulisan syntax javascript berdasarkan modul yaitu variabel pesan ditulis dua kali
 
-![Salah variabel pesan](media/5.png)
+![Salah variabel pesan](media/4.png)
 
 b. Jadi saya memperbaiki dengan menghilangkan `const.pesan` dibawah `const tombol`
 
-![Perbaikan variabel pesan](media/6.png)
+![Perbaikan variabel pesan](media/5.png)
 
 ### 4. Hasil HTML sampai event click
 
 a. Base Html tanpa Javascript
 
-![Hasil Base HTML](media/7.png)
+![Hasil Base HTML](media/6.png)
 
 b. Setelah ditambahkan javascript untuk mengubah teks dengan DOM
 
-![Hasil DOM Ubah Teks](media/8.png)
+![Hasil DOM Ubah Teks](media/7.png)
 
 c. Menambahkan syntax `addEventListener` pada Klik Saya, akan menghasilkan tanggal di klik.
 
-![Hasil Click Event Waktu](media/9.png)
+![Hasil Click Event Waktu](media/8.png)
 
 ### 5. Mengubah Kelas dan Gaya CSS
 
@@ -70,57 +70,57 @@ Mengatur CSS berikut ke `style.css` dan buat paragraf id `teksGaya` serta tombol
 
 a. Namun pada modul yang diberikan, terdapat kesalahan syntax yaitu `tombolGaya` belum terdefinisi pada `index.html` dan syntax `const` tidak ada di css
 
-![Kesalahan syntax style.css 1](media/10.png)
+![Kesalahan syntax style.css 1](media/9.png)
 
-![Kesalahan syntax style.css 2](media/11.png)
+![Kesalahan syntax style.css 2](media/10.png)
 
 Sehingga hasil tidak berubah
 
-![Hasil belum berubah](media/12.png)
+![Hasil belum berubah](media/11.png)
 
 b. Memperbaiki kesalahan penulisan
 
 - Menambah syntax pada `index.html`
 
-![Tambah syntax index.html](media/13.png)
+![Tambah syntax index.html](media/12.png)
 
 - Mengubah syntax `script.js`
 
-![Ubah syntax script.js](media/14.png)
+![Ubah syntax script.js](media/13.png)
 
 - Mengubah syntax `style.css`
 
-![Ubah syntax style.css](media/15.png)
+![Ubah syntax style.css](media/14.png)
 
 c. Sehingga Hasil
 
 - Setelah penambahan pada paragraf html
 
-![Hasil penambahan HTML](media/16.png)
+![Hasil penambahan HTML](media/15.png)
 
 - Jika di klik Ubah Gaya Teks
 
-![Hasil Ubah Gaya Teks](media/17.png)
+![Hasil Ubah Gaya Teks](media/16.png)
 
 ### 6. Even Input dan Penghitung Karakter
 
 a. Tambahkan label input pada html
 
-![HTML label input](media/18.png)
+![HTML label input](media/17.png)
 
 Hasil
 
-![Hasil label input](media/19.png)
+![Hasil label input](media/18.png)
 
 b. Menambah syntax javascript sehingga jumlah karakter berfungsi
 
-![JavaScript jumlah karakter](media/20.png)
+![JavaScript jumlah karakter](media/19.png)
 
 Hasil setelah menambah syntax html dan javascript
 
 jumlah karakter bertambah disetiap
 
-![Hasil counter karakter](media/21.png)
+![Hasil counter karakter](media/20.png)
 
 ### 7. Validasi Form Pendaftaran
 
@@ -128,51 +128,51 @@ Buat form nama, email, dan usia. Program menampilkan pesan jika input tidak sesu
 
 a. Membuat form pendaftaran di html
 
-![Form Pendaftaran HTML](media/22.png)
+![Form Pendaftaran HTML](media/21.png)
 
 b. Menciptakan peraturan terkait pengisian form menggunakan javascript
 
-![Validasi Form JavaScript](media/23.png)
+![Validasi Form JavaScript](media/22.png)
 
 Hasil jika semua kosong, nama kosong, email tidak valid, usia di bawah 17, dan semua input valid.
 
 - semua Kosong
 
-![Semua Kosong](media/24.png)
+![Semua Kosong](media/23.png)
 
 - nama tidak valid
 
-![Nama Tidak Valid](media/25.png)
+![Nama Tidak Valid](media/24.png)
 
 - email tidak valid
 
-![Email Tidak Valid](media/26.png)
+![Email Tidak Valid](media/25.png)
 
 - usia dibawah 17
 
-![Usia Dibawah 17](media/27.png)
+![Usia Dibawah 17](media/26.png)
 
 - semua input valid. saat validasi berhasil, form kembali kosong
 
-![Semua Validasi Berhasil](media/28.png)
+![Semua Validasi Berhasil](media/27.png)
 
 ### 8. To Do List
 
 a. Membuat daftar tugas dibungkus section pada html
 
-![To Do List HTML](media/29.png)
+![To Do List HTML](media/28.png)
 
 b. Mengatur logika daftar tugas di javascript
 
-![To Do List JavaScript](media/30.png)
+![To Do List JavaScript](media/29.png)
 
 c. Merapihkan hasil daftar tugas yang ditambahkan menggunakan css list
 
-![To Do List CSS](media/31.png)
+![To Do List CSS](media/30.png)
 
 d. Hasil
 
-![To Do List Hasil](media/32.png)
+![To Do List Hasil](media/31.png)
 
 ## D. Mini Project
 
